@@ -4,7 +4,7 @@ def fibanacci_number(num):
     else:
         return (fibanacci_number(num-1) + fibanacci_number(num-2))
     
-number=5
+number = int((input('Enter the number: ')))
 
 if number<=0:
     print("please Enter the positive number")

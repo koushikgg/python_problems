@@ -4,5 +4,5 @@ def prime_number(num):
             return f'{num} is not prime number'
     return f'{num} is prime number'
 
-number = 70
+number = int((input('Enter the number: ')))
 print(prime_number(number))

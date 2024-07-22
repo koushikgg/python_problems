@@ -8,6 +8,6 @@ def perfect_number(num):
     else:
         print("it is not perfect number")
 
-number= 28
+number = int((input('Enter the number: ')))
 
 perfect_number(number)
