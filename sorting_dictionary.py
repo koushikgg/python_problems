@@ -7,10 +7,10 @@ def sort_dictionary(dictionary):
 if __name__ == '__main__':
   
     new_dict = {
-        "apple": 3,
-        "mango": 2,
-        "orange": 4,
-        "lemon": 1,
+        "king": 3,
+        "lion": 2,
+        "dog": 4,
+        "elephant": 1,
     }
 
     ascending_order, decending_order = sort_dictionary(new_dict)
