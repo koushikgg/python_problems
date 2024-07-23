@@ -8,6 +8,7 @@ def perfect_number(num):
     else:
         print("it is not perfect number")
 
-number = int((input('Enter the number: ')))
+if __name__ == "__main__":
 
-perfect_number(number)
+    number = int((input('Enter the number: ')))
+    perfect_number(number)

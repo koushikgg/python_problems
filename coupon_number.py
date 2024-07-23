@@ -9,6 +9,7 @@ def coupon_number(num):
         random_numbers += 1
     return random_numbers
 
-number = int((input('Enter the number: ')))
-output = coupon_number(number)
-print(f"total {output} random number is needed to have all distinct numbers ")
+if __name__ == "__main__":
+    number = int((input('Enter the number: ')))
+    output = coupon_number(number)
+    print(f"total {output} random number is needed to have all distinct numbers ")

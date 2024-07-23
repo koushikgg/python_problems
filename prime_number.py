@@ -4,5 +4,6 @@ def prime_number(num):
             return f'{num} is not prime number'
     return f'{num} is prime number'
 
-number = int((input('Enter the number: ')))
-print(prime_number(number))
+if __name__ == "__main__":
+    number = int((input('Enter the number: ')))
+    print(prime_number(number))

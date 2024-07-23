@@ -6,5 +6,7 @@ def reverse_number(num):
         num= num//10
     print(reverse)
     
-number = int((input('Enter the number: ')))
-reverse_number(number)
+    
+if __name__ == "__main__":
+    number = int((input('Enter the number: ')))
+    reverse_number(number)
