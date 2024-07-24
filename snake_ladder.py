@@ -2,6 +2,7 @@ import random
 def snake_ladder():
     winning_position=100
     player_position=0
+    number_of_dice=0
     def roll_dice():
         return random.randint(1, 6)
 
@@ -23,10 +24,12 @@ def snake_ladder():
                     print("No Play")
                 elif play == 'snake':
                     player_position -= dice_number
+                    number_of_dice+=1
                     print("Oops Snake")
                 else:  # option == 'ladder'
                     next_position= player_position+dice_number
                     print("You got a ladder")
+                    number_of_dice+=1
                     if next_position <= winning_position: 
                         player_position+= dice_number
                         
@@ -41,8 +44,7 @@ def snake_ladder():
                     return "Congrats you won"
 
                 print(f"you got dice value : {dice_number}, now your at {player_position}")
-
-   
+    print(f"{number_of_dice} Number of times rolled to win !!")
     result = game()
     print(result)
     
