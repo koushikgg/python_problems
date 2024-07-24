@@ -1,0 +1,5 @@
+new_tuple = ('Apple', 'Ball', 'Cat', 'Dog')
+temp_list = list(new_tuple)
+temp_list.remove('Cat')
+sec_tuple = tuple(temp_list)
+print(sec_tuple)
