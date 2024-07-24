@@ -25,9 +25,11 @@ def snake_ladder():
                     player_position -= dice_number
                     print("Oops Snake")
                 else:  # option == 'ladder'
-                    player_position += dice_number
+                    next_position= player_position+dice_number
                     print("You got a ladder")
-
+                    if next_position <= winning_position: 
+                        player_position+= dice_number
+                        
                 if player_position < 0:
                     count = 0
                     player_position = start_position
